@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f2e9">
+    <title>One Shot — The Horse Auction</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="One Shot home">
+        <span class="brand-mark" aria-hidden="true">O</span>
+        <span>ONE SHOT<span class="brand-period">.</span></span>
+      </a>
+      <span class="edition"><span class="live-dot"></span> A DIFFERENT KIND OF AUCTION</span>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">ONE HORSE. ONE BID. YOUR SHOT.</p>
+        <h1 id="page-title">Make it<br><em>count.</em></h1>
+        <p class="intro-copy">A rare horse, a fair shot. Put your best bid forward — you only get one.</p>
+      </section>
+
+      <section class="auction-card" aria-labelledby="horse-name">
+        <div class="horse-panel">
+          <div class="horse-topline"><span>LOT 001</span><span class="lot-status"><span class="live-dot"></span> OPEN</span></div>
+          <div class="horse-art" role="img" aria-label="Illustration of a chestnut horse">
+            <span class="sun"></span>
+            <span class="horse-emoji" aria-hidden="true">🐎</span>
+            <span class="art-caption">THOROUGHBRED · EST. 2019</span>
+          </div>
+          <div class="horse-description">
+            <div>
+              <p class="eyebrow">THE FEATURED HORSE</p>
+              <h2 id="horse-name">Copperfield</h2>
+            </div>
+            <span class="verified">✳ VET CHECKED</span>
+            <p class="horse-copy">A spirited chestnut with a calm temperament and a champion’s stride. Raised with care, ready for a new chapter.</p>
+            <dl class="horse-facts">
+              <div><dt>AGE</dt><dd>7 years</dd></div>
+              <div><dt>BREED</dt><dd>Thoroughbred</dd></div>
+              <div><dt>HEIGHT</dt><dd>16.2 hands</dd></div>
+              <div><dt>LOCATION</dt><dd>Kentucky, USA</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="bid-panel">
+          <p class="eyebrow">THE CLOCK IS TICKING</p>
+          <div class="countdown" aria-label="Time remaining">
+            <div><strong id="hours">24</strong><span>HOURS</span></div>
+            <b>:</b>
+            <div><strong id="minutes">00</strong><span>MINUTES</span></div>
+            <b>:</b>
+            <div><strong id="seconds">00</strong><span>SECONDS</span></div>
+          </div>
+          <div class="divider"></div>
+          <div class="current-bid">
+            <span class="eyebrow">CURRENT HIGH BID</span>
+            <strong id="current-bid">$12,500</strong>
+          </div>
+          <div class="bid-note">
+            <span class="note-icon" aria-hidden="true">↗</span>
+            <p>Your bid must be at least <strong id="minimum-bid">$12,600</strong>.<br>Choose carefully — bids are final.</p>
+          </div>
+          <form id="bid-form">
+            <label for="bid-amount">YOUR ONE-SHOT BID <span>USD</span></label>
+            <div class="input-wrap"><span aria-hidden="true">$</span><input id="bid-amount" name="bid" type="number" min="12600" step="1" placeholder="Enter your best offer" required></div>
+            <button type="submit" id="bid-button">PLACE MY ONE BID <span aria-hidden="true">→</span></button>
+            <p id="bid-message" class="form-message" role="status" aria-live="polite">One bid per person. No second chances.</p>
+          </form>
+          <p class="demo-note">Demo auction · bids are saved in this browser only.</p>
+        </div>
+      </section>
+
+      <section class="how-it-works" aria-label="How the auction works">
+        <div><span class="step-number">01</span><p><strong>Know the horse</strong><br>Take a moment with the details.</p></div>
+        <div><span class="step-number">02</span><p><strong>Pick your number</strong><br>No bidding wars. No do-overs.</p></div>
+        <div><span class="step-number">03</span><p><strong>Make your shot</strong><br>Highest bid when time runs out wins.</p></div>
+      </section>
+    </main>
+    <footer><span>ONE SHOT<span class="brand-period">.</span></span><span>GOOD HORSES DESERVE A GOOD HOME.</span></footer>
+  </body>
+</html>
