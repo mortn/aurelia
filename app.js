@@ -21,6 +21,7 @@ function readAuction() {
 }
 
 let auction = readAuction();
+saveAuction();
 
 function saveAuction() {
   try {
